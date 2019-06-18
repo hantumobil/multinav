@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title>Multinav</title>
+	<link rel="stylesheet" href="style.scss">
+</head>
+<body>
+<h1>multinav</h1>
+
+
+<div class="content">
+	<div id="multinav" class="multinav root">
+		<a id="multinav__reset" href="">reset</a>
+		<nav class="multinav__container parent">
+			<ul class="multinav__list active">
+				<span class="multinav__title">Root Menu</span>
+				<li class="multinav__item"><a href="" class="multinav__link">link 1</a></li>
+				<li class="multinav__item">
+					<a href="" class="multinav__link">link 2</a>
+					<ul class="multinav__list">
+						<span class="multinav__title"><a href="" class="multinav__back">Link2 Menu</a></span>
+						<li class="multinav__item"><a href="" class="multinav__link">link a</a></li>
+						<li class="multinav__item"><a href="" class="multinav__link">link b</a>
+							<ul class="multinav__list">
+								<span class="multinav__title"><a href="" class="multinav__back">Link b Menu</a></span>
+								<li class="multinav__item"><a href="" class="multinav__link">link x</a></li>
+								<li class="multinav__item">
+									<a href="">link y</a>
+									<ul class="multinav__list">
+										<span class="multinav__title"><a href="" class="multinav__back">Link y Menu</a></span>
+										<li class="multinav__item"><a href="" class="multinav__link">link ab</a></li>
+										<li class="multinav__item"><a href="" class="multinav__link">link ac</a></li>
+										<li class="multinav__item"><a href="" class="multinav__link">link ad</a></li>
+									</ul>
+								</li>
+								<li class="multinav__item"><a href="" class="multinav__link">link c</a></li>
+							</ul>
+						</li>
+						<li class="multinav__item"><a href="" class="multinav__link">link c</a></li>
+					</ul>
+				</li>
+				<li class="multinav__item"><a href="" class="multinav__link">link 3</a></li>
+			</ul>
+		</nav>
+	</div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
