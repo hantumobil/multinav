@@ -1,0 +1,33 @@
+.multinav {
+	&__container {
+		display: flow-root;
+		position: relative;
+		width: 100%;
+		height: 100vh;
+		border: 1px solid magenta;
+		box-sizing: border-box;
+	}
+
+	&__list {
+		position: absolute;
+		display: inline-block;
+		background: white;
+		top: 0;
+		left: 0;
+		transform: translate3d(100%, 0, 0);
+		transition: transform .3s ease-out;
+		box-sizing: border-box;
+
+		&.root, &.parent, &.active {
+			transform: translate3d(0, 0, 0);
+		}
+	}
+
+	&__back {
+		&::before {
+			display: inline-block;
+			content: "<__";
+		}
+	}
+
+}
